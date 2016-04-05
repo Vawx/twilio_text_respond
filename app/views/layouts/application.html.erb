@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Twiliotext</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Twilio Text</h1>
+      <p>Send an SMS text.</p>
+    </div>
+  </div>
+
+<%= flash[:notice] %>
+<%= yield %>
+
+</body>
+</html>
