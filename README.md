@@ -6,7 +6,7 @@ Uses Rest Client to get post and get requests in order to send and receive sms t
 ## Prerequisites
 ngrok `brew install ngrok` # if version is not 2.0+ # `brew cask install ngrok`
 
-## Use
+## Use 
 run `bundle`
 run `rails s`
 run ngrok
