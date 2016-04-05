@@ -3,6 +3,16 @@
 ## About
 Uses Rest Client to get post and get requests in order to send and receive sms text messages from Twilio.
 
+## Prerequisites
+ngrok `brew install ngrok` # if version is not 2.0+ # `brew cask install ngrok`
+
+## Use
+run `bundle`
+run `rails s`
+run ngrok
+
+Use local host to have text message sent to you. Reply to text message to get reply from app.
+
 ## License
 The MIT License (MIT)
 Copyright (c) <2016> Kyle Langley
