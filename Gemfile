@@ -28,6 +28,8 @@ gem 'rest-client'
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'autoprefixer-rails'
 
+gem 'devise'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -42,11 +44,22 @@ group :development, :test do
   gem 'byebug'
   gem 'dotenv-rails'
   gem 'pry'
+  gem 'rspec-rails'
+  gem 'launchy'
+  gem 'capybara'
+end
+
+group :test do
+  gem 'shoulda-matchers'
+  gem 'factory_girl_rails', '~> 4.0'
+  gem 'simplecov', :require => false
+  gem 'poltergeist'
 end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
+  gem 'quiet_assets'
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'

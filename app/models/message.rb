@@ -1,5 +1,6 @@
 class Message < ActiveRecord::Base
   before_create :send_message
+  validates :body, presence: true
 
 private
   define_method :send_message do
