@@ -16,7 +16,7 @@ run `rails s`
 
 run ngrok
 
-Use local host to have text message sent to you. Reply to text message to get reply from app.
+Use local host to have text message sent to you. Reply to text message to get reply from application.
 
 ## License
 The MIT License (MIT)
