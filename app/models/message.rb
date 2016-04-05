@@ -6,9 +6,9 @@ private
   define_method :send_message do
     response = RestClient::Request.new(
       :method => :post,
-      :url => "https://api.twilio.com/2010-04-01/Accounts/ACec91727f81ee8699eef144458a654352/Messages.json",
-      :user => 'ACec91727f81ee8699eef144458a654352',
-      :password => '7a53c2166473860e847b49e5cd32888e',
+      :url => "https://api.twilio.com/2010-04-01/Accounts/#{ENV['TWILIO_USER_ID']}/Messages.json",
+      :user => ENV['TWILIO_USER_ID'],
+      :password => ENV['TWILIO_USER_PASSWORD'],
       :payload => { :Body => body,
                     :From => from,
                     :To => to }
